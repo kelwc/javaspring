@@ -22,7 +22,7 @@ public class HelloWorldController {
     }
 
     @RequestMapping(method = RequestMethod.POST, produces = "application/json")
-    public ResponseEntity helloWorldPost(@RequestParam(value = "name", defaultValue = "World") String name) {
+    public ResponseEntity helloWorldPost(@RequestParam(value = "name", defaultValue = "World"xzczxc) String name) {
         return ResponseEntity.ok(createResponse(name));
     }
 
